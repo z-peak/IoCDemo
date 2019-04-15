@@ -16,7 +16,5 @@ public @interface EventBase {
     Class<?> listenerType();
 
     //3、回调方法 onClick(View view)
-    String callBackListener();
-
-
+    String callBackFunction();
 }

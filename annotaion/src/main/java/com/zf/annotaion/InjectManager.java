@@ -96,7 +96,7 @@ public class InjectManager {
                     //获取OnClick注解上的EventBase注解
                     EventBase eventBase= annotationType.getAnnotation(EventBase.class);
                     if (eventBase==null)return;
-                    String callBackListener = eventBase.callBackListener();//onClick
+                    String callBackListener = eventBase.callBackFunction();//onClick
                     String listenerSetter = eventBase.listenerSetter();//setOnClickListener
                     Class<?> listenerType = eventBase.listenerType();// View.OnClickListener.class
 

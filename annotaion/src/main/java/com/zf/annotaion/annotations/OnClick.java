@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-@EventBase(listenerSetter = "setOnClickListener",listenerType = View.OnClickListener.class,callBackListener = "onClick")
+@EventBase(listenerSetter = "setOnClickListener",listenerType = View.OnClickListener.class,callBackFunction = "onClick")
 public @interface OnClick {
     int[] value();
 }
